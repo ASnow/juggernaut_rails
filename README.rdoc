@@ -1,3 +1,5 @@
+Works for Rails 3.2.x
+
 Juggernaut
     by Alex MacCaw http://www.eribium.org
     minor fixes and unit tests by Ripta Pasay
@@ -23,7 +25,7 @@ Install the gem
 Now add the gem to your application and include Juggernaut's Rake tasks in your app's Rakefile:
 
   # config/environment.rb
-  config.gem 'juggernaut_rails'
+  gem 'juggernaut_rails', git: "git://github.com/ASnow/juggernaut_rails.git", branch: "master"
 
   # Rakefile
   begin
