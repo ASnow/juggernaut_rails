@@ -19,10 +19,6 @@ Gem::Specification.new do |s|
   s.executables = []
   s.files       = Dir['[A-Z]*', '{bin,lib,media,rails,test}/**/*']
 
-  s.add_dependency('activesupport',   version)
-  s.add_dependency('actionpack',      version)
-  s.add_dependency('activerecord',    version)
-  s.add_dependency('actionmailer',    version)
   s.add_dependency('eventmachine',    '>= 0.10.0')
   s.add_dependency('json',            '>= 1.1.2')
   s.add_dependency('escape',          '~> 1.0')

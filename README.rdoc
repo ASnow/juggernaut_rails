@@ -15,16 +15,9 @@ At the time of writing (Oct 29 2009) this Gem is based on (the latest) version 0
 
 == INSTALL
 
-Install the gem
+Now add the gem to your Gemfile and include Juggernaut's Rake tasks in your app's Rakefile:
 
-  # This requires GemCutter.  To get started with GemCutter:
-  #  gem install gemcutter
-  #  gem tumble
-  gem install juggernaut_rails
-
-Now add the gem to your application and include Juggernaut's Rake tasks in your app's Rakefile:
-
-  # config/environment.rb
+  # Gemfile
   gem 'juggernaut_rails', git: "git://github.com/ASnow/juggernaut_rails.git", branch: "master"
 
   # Rakefile
