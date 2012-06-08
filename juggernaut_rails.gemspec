@@ -22,6 +22,4 @@ Gem::Specification.new do |s|
   s.add_dependency('eventmachine',    '>= 0.10.0')
   s.add_dependency('json',            '>= 1.1.2')
   s.add_dependency('escape')
-  s.add_dependency('action_view')
-  s.add_dependency('action_controller')
 end
