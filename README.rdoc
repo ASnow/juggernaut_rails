@@ -22,7 +22,7 @@ Now add the gem to your Gemfile and include Juggernaut's Rake tasks in your app'
 
   # Rakefile
   begin
-    require 'juggernaut/rails/tasks'
+    require 'juggernaut/j_rails/tasks'
   rescue Exception => e
     puts "Warning, couldn't load gem tasks: #{e.message}! Skipping..."
   end

@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__), '../lib/juggernaut')
-require File.join(File.dirname(__FILE__), '../lib/juggernaut/rails')
-require File.join(File.dirname(__FILE__), '../lib/juggernaut/rails/helpers')
+require File.join(File.dirname(__FILE__), '../lib/juggernaut/j_rails')
+require File.join(File.dirname(__FILE__), '../lib/juggernaut/j_rails/helpers')
 
 Juggernaut.send(:include, Juggernaut::JRails::ConvenienceMethods)
 ActionView::Base.send(:include, Juggernaut::JRails::Helpers)
