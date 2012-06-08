@@ -110,7 +110,7 @@ module Juggernaut::JRails
         hash[:client_ids] = Array(hash[:client_ids]) if hash[:client_ids]
       
         res = []
-        hosts.each do |address|
+        hosts.each do |name, address|
           begin
             hash[:secret_key] = address[:secret_key] if address[:secret_key]
           
