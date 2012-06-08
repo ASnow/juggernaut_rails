@@ -14,11 +14,11 @@ module Juggernaut
       end
       
       def hosts
-        @hosts ||= YAML::load(ERB.new(IO.read("#{::Rails.root}/config/juggernaut_hosts.yml")).result)[:hosts].select {|h| !h[:environment] or h[:environment] == ::Rails.env.to_sym }
+        @hosts ||= YAML::load(ERB.new(IO.read("#{::Rails.root}/config/juggernaut_hosts.yml")).result)[:hosts].select {|k, h| !h[:environment] or h[:environment] == ::Rails.env.to_sym }
       end
       
       def random_host
-        hosts[rand(hosts.length)]        
+        hosts[hosts.keys.sample]        
       end
     end
   end

@@ -161,6 +161,8 @@ require 'juggernaut/runner'
 
 require 'juggernaut/j_rails'
 require 'juggernaut/j_rails/helpers'
+require 'juggernaut/j_rails/convenience_methods'
+require 'juggernaut/j_rails/render_extension'
 
 Juggernaut.send(:include, Juggernaut::JRails::ConvenienceMethods)
 ActionView::Base.send(:include, Juggernaut::JRails::Helpers)
