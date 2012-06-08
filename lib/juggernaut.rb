@@ -159,9 +159,8 @@ require 'juggernaut/server'
 require 'juggernaut/runner'
 
 
-require File.join(File.dirname(__FILE__), './lib/juggernaut')
-require File.join(File.dirname(__FILE__), './lib/juggernaut/j_rails')
-require File.join(File.dirname(__FILE__), './lib/juggernaut/j_rails/helpers')
+require 'juggernaut/j_rails'
+require 'juggernaut/j_rails/helpers'
 
 Juggernaut.send(:include, Juggernaut::JRails::ConvenienceMethods)
 ActionView::Base.send(:include, Juggernaut::JRails::Helpers)
