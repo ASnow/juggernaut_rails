@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
 
   s.bindir      = 'bin'
   s.executables = []
-  s.files       = FileList['[A-Z]*', '{bin,lib,media,rails,test}/**/*']
+  s.files       = Dir['[A-Z]*', '{bin,lib,media,rails,test}/**/*']
 
   s.add_dependency('activesupport',   version)
   s.add_dependency('actionpack',      version)
