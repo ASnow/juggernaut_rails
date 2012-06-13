@@ -151,18 +151,18 @@ module Juggernaut
   end
 end
 
-require 'juggernaut/utils'
-require 'juggernaut/miscel'
-require 'juggernaut/message'
-require 'juggernaut/client'
-require 'juggernaut/server'
-require 'juggernaut/runner'
+require_relative 'juggernaut/utils'
+require_relative 'juggernaut/miscel'
+require_relative 'juggernaut/message'
+require_relative 'juggernaut/client'
+require_relative 'juggernaut/server'
+require_relative 'juggernaut/runner'
 
 
-require 'juggernaut/j_rails'
-require 'juggernaut/j_rails/helpers'
-require 'juggernaut/j_rails/convenience_methods'
-require 'juggernaut/j_rails/render_extension'
+require_relative 'juggernaut/j_rails'
+require_relative 'juggernaut/j_rails/helpers'
+require_relative 'juggernaut/j_rails/convenience_methods'
+require_relative 'juggernaut/j_rails/render_extension'
 
 Juggernaut.send(:include, Juggernaut::JRails::ConvenienceMethods)
 ActionView::Base.send(:include, Juggernaut::JRails::Helpers)
