@@ -4,7 +4,7 @@ require 'json'
 require 'open-uri'
 require 'fileutils'
 require 'digest/sha1'
-require 'ruby-debug'
+
 
 module Juggernaut
   class Server < EventMachine::Connection
