@@ -13,14 +13,15 @@ module Juggernaut # :nodoc:
       
       def juggernaut_options(options = {})
         random_host = Juggernaut::JRails.random_host
+        session_name = Rails.application.config.session_options[:key]
         options = {
           :host                 => (random_host[:public_host] || random_host[:host]),
           :port                 => (random_host[:public_port] || random_host[:port]),
           :width                => '0px',
           :height               => '0px',
           :session_id           => request.session_options[:id],
-          :session_name         => Rails.application.config.session_options[:key],
-          :session_value        => cookies[vars[:session_name]] || '',
+          :session_name         => session_name,
+          :session_value        => cookies[session_name] || '',
           :token_name           => request_forgery_protection_token,
           :token_value          => URI.escape(form_authenticity_token, '/+='),
           :swf_address          => "/juggernaut/juggernaut.swf",
